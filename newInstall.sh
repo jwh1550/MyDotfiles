@@ -146,14 +146,99 @@ cargo install --locked navi
 
 curl 'https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh' -H
 sudo chmod +x ./dotnet-install.sh
-
 ./dotnet-install.sh --version latest
 
 cargo install onefetch
 
+curl -L https://install.meilisearch.com | sh
+
+cargo install cargo-web
+cargo web build
+#cargo web start
+
+
+
+rustup target add wasm32-unknown-unknown
+cargo install --locked trunk
+cargo install trunk wasm-bindgen-cli
+cargo install wasm-pack
+wasm-pack build --target web
+
+
+cargo install wasm-pack
+cargo install basic-http-server
+
+cargo install basic-http-server
+
+## To build  rust-yew-realworld-example-app
+## From here 
+cargo install tauri-cli
+cargo tauri dev
+cargo tauri build
+
+npx create-yew-app my-app
+cd my-app
+npm start
+##
+## To here
+
+#  Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.
+cargo install sonic-server
+
+# ls replacement
+cargo install lsd##
+
+#A fast static site generator in a single binary with everything built-in. https://www.getzola.org
+sudo dnf install zola -y
+
+# Blazing boom fast terminal-ui for git written in rust crab
+cargo install gitui
+
+
+# Terminal bandwidth utilization tool 
+cargo install bandwhich
+
+# https://github.com/Byron/gitoxide
+# The default installation, 'max'
+cargo install gitoxide
+
+# For smaller binaries and even faster build times that are traded for a less fancy CLI implementation, use `lean`
+# or `lean-termion` respectively.
+cargo install gitoxide --no-default-features --features lean
+
+# Follow with this one
+cargo install --git https://github.com/Byron/gitoxide  gitoxide
+
+# https://github.com/libreddit/libreddit
+# Private front-end for Reddit 
+cargo install libreddit
+
+
+# Serenity discord bot
+cargo-make
+Install cargo-make cargo install --force cargo-make
+git clone https://github.com/serenity-rs/serenity.git
+cd serenity
+cargo make 1
+
+# https://github.com/jameslittle230/stork
+# mag_right Impossibly fast web search, made for static sites. 
+cargo install stork-search --locked
+
+
+
+# https://github.com/tinysearch/tinysearch
+# mag Tiny, full-text search engine for static websites built with Rust and Wasm 
+cargo install tinysearch
+
 sudo dnf update 
 sudo dnf upgrade -y --refresh
-sudo dnf autoremove
+sudo dnf clean dbcache
+sudo dnf clean all
 #sudo reboot now 
 
 #firewall-config
+
+
+# Still repos under 1k stars
+# repos

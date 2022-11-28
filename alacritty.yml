@@ -21,7 +21,7 @@ window:
   dynamic_padding: false
 
 
-  opacity: 1.0
+  opacity: 1.5
   # opacity: 0.80
 decorations: full
   # Window decorations
@@ -66,7 +66,7 @@ scrolling:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 0
+    x: 1
     y: 1
 
 
