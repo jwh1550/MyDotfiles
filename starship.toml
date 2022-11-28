@@ -1,0 +1,164 @@
+#let-env STARSHIP_SHELL = "nu"
+right_format = """$time"""
+add_newline = false
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+format = " $symbol$branch "
+symbol = "🍣 "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+format = '($state( $progress_current of $progress_total)) '
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+
+
+
+[hostname]
+ssh_only = false
+format = "<$hostname>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[line_break]
+disabled = true
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+utc_time_offset = "local"
+time_range = "00:00:00-23:59:59"
+style = "bold yellow"
+
+
+
+
+[custom.nu]
+command = "echo 🦀"
+shell = 'nu'
+when = '[ "$STARSHIP_SHELL" == "nu" ]'
+#command = right_format
+#command = """$time"""
+#command = "echo $time"
+#command = "echo greetings"
+
+#command = "echo $right_format"
+#def create_left_prompt [] {
+#    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
+
+
+# Use nushell functions to define your right and left prompt
+#let-env PROMPT_COMMAND = { create_left_prompt }
+#let-env PROMPT_COMMAND_RIGHT = ""
+
+# The prompt indicators are environmental variables that represent
+# the state of the prompt
+#let-env PROMPT_INDICATOR = ""
+#let-env PROMPT_INDICATOR_VI_INSERT = ": "
+#let-env PROMPT_INDICATOR_VI_NORMAL = "〉"
+#let-env PROMPT_MULTILINE_INDICATOR = "::: "
+
+
+#[character]
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" is set to "➜" with color "bold green"
+error_symbol = "[✗](bold red) "
